@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "plain-light";
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: plain-light;
+    src: url(./ObysAssets/ObysFont/ttffont/plain-light-webfont.ttf);
+}
+@font-face {
+    font-family: plain-regular;
+    src: url(./ObysAssets/ObysFont/ttffont/plain-regular-webfont.ttf);
+}
+@font-face {
+    font-family: silkserif-lightitalic;
+    src: url(./ObysAssets/ObysFont/ttffont/silkserif-lightitalic-webfont.ttf);
+}
+@font-face {
+    font-family: silkserif-regularitalic;
+    src: url(./ObysAssets/ObysFont/ttffont/silkserif-regularitalic-webfont.ttf);
+}
+
+#loader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #0B0B0B;
+    padding: 25vh 10vw;
+}
+.line {
+    /* background-color: red; */
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3vw;
+}
+#line1-part1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+#line1-part1 h5, #line1-part1 h6 {
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: "silkserif-lightitalic";
+}
+#line1-part1 h5 {
+    /* background-color: red; */
+    width: 5vw;
+    text-align: right;
+}
+.line h1 {
+    font-size: 6.5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.line h2 {
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes anime {
+    0%{
+        font-family: "plain-light";
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 500;
+        opacity: 1;
+    }
+     48%{
+        font-family: "plain-light";
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 500;
+        opacity: 0;
+    }
+    50%{
+        font-family: "silkserif-lightitalic";
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        font-weight: 500;
+        opacity: 1;
+    }
+    100%{
+        font-family: "silkserif-lightitalic";
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        font-weight: 500;
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+#main {
+    position: relative;
+    /* background-color: #111; */
+    background-color: #030303;
+}
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #151515;
+}
