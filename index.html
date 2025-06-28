@@ -10,6 +10,8 @@
       href="./ObysAssets/ObsyFavicon/favicon-32x32.png"
       type="image/x-icon"
     />
+    <!-- locomotive cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <!-- shery js cdn-->
     <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
     <!-- Remix Icon cdn -->
@@ -40,7 +42,7 @@
       </div>
     </div>
     <div id="main">
-      <div id="page1">
+      <div id="page1" data-scroll data-scroll data-scroll-speed="-2">
         <div id="nav">
           <svg class="brand__svg" width="71" height="27" viewBox="0 0 71 27">
             <path
@@ -104,7 +106,7 @@
           <h1>Experience</h1>
         </div>
       </div>
-      <div id="page2">
+      <div id="page2" data-scroll data-scroll-speed="-2">
         <div id="video-container">
           <div id="video-cursor">
             <i class="ri-play-mini-fill"></i>
@@ -114,7 +116,6 @@
             alt=""
           />
           <video
-            autoplay
             loop
             muted
             src="./ObysAssets/ObysVideo/Obys-Showreel-2024.mp4"
@@ -122,7 +123,7 @@
         </div>
       </div>
       <div id="page3"></div>
-      <div id="page4">
+      <div id="page4" data-scroll>
         <div id="page4-content">
           <h1>About Obys</h1>
           <div class="underline"></div>
@@ -170,13 +171,55 @@
           <div class="underline"></div>
         </div>
       </div>
-      <div id="page5">
-        
+      <div id="page5" data-scroll>
+        <div class="elem">
+          <h1><span>Sport</span> - Fashion - Technology -</h1>
+          <h1><span>Sport</span> - Fashion - Technology -</h1>
+        </div>
+        <div class="elem2">
+          <h1>Science - <span>Partners</span> - Travel -</h1>
+          <h1>Science - <span>Partners</span> - Travel -</h1>
+        </div>
+        <div class="elem">
+          <h1>Sport - Fashion - Technology -</h1>
+          <h1>Sport - Fashion - Technology -</h1>
+        </div>
+        <div class="elem2">
+          <h1><span>Science</span> - Partners - Travel -</h1>
+          <h1><span>Science</span> - Partners - Travel -</h1>
+        </div>
+      </div>
+      <div id="footer" data-scroll>
+        <h1>Let's Create</h1>
+        <div class="underline"></div>
+        <div id="footer-div">
+          <div class="box">
+            <h6>Social</h6>
+            <h5>Dribbble</h5>
+            <h5>Behance</h5>
+            <h5>Instagram</h5>
+            <h5>Facebook</h5>
+            <h5>Twitter</h5>
+            <h5>YouTube</h5>
+          </div>
+          <div class="box">
+            <h6>Address</h6>
+            <h5>Originally from Kharkiv, working globally</h5>
+          </div>
+          <div class="box">
+            <h6>Say Hi!</h6>
+            <h5>info@obys.agency</h5>
+          </div>
+        </div>
+        <div class="underline"></div>
+        <h5>Obys Agency © 2025</h5>
       </div>
     </div>
 
+     <!-- locomotive js file -->
+     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <!-- gsap cdn -->
-    <script
+    <script 
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
       integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
       crossorigin="anonymous"
